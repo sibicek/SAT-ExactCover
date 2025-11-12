@@ -6,11 +6,15 @@ over a set
 \( X = \{ 1, \dots, n \} \)
 
 **Decision question:**  
-Is there a subcollection \( S^* \subseteq S \) such that each element in \( X \) is contained in exactly one subset in \( S^* \)?  
-In other words, does \( S^* \) form an **exact cover** of \( X \) — a partition of \( X \) consisting of subsets from \( S \)?
+Let \(X = \{1, 2, \dots, n\}\) and \(S = \{S_1, S_2, \dots, S_m\}\) be a collection of subsets of \(X\).
+
+**Decision question:**  
+Is there a subcollection \(S^* \subseteq S\) such that each element in \(X\) appears in exactly **one** subset of \(S^*\)?  
+Equivalently, does \(S^*\) form an **exact cover** of \(X\)?
 
 **Decision output:**  
-`SAT` if such a selection exists; `UNSAT` otherwise.
+- `SAT` if such a selection exists.  
+- `UNSAT` otherwise.
 
 **Input format** 
 n m
@@ -24,16 +28,20 @@ n - number of elements in set X
 m - number of subsets in the collection of subsets S
 Si - integers representing the elements of subset Si
 
-**Valid input examples**
+**Example 1 (UNSAT):**
+```
 4 3
 1 2
 2 3
 3 4
+```
 Decision output: UNSAT
-
+**Example 2 (SAT):**
+```
 3 3
 1
 2 
-3 
+3
+```
 Decision output: SAT
 
