@@ -47,18 +47,14 @@ The problem is encoded using variables $s_i$ that indicate whether we select the
 
 For each element $x \in X$, define  
 
-$$
-I(x) = \{ i \mid x \in S_i \}
-$$
+$I(x) = \{ i \mid x \in S_i \}$
 
 We require that each element $x \in X$ is covered exactly once:
 
-1. **At least one subset covers x**:  
-$$
-\bigvee_{j \in I(x)} s_j
-$$
+1. **At least one subset covers x**:
+     
+$\bigvee_{j \in I(x)} s_j$
 
-3. **At most one subset covers x**:  
-$$
-\neg s_j \vee \neg s_k \quad \text{for all } j \neq k \text{ in } I(x)
-$$
+2. **At most one subset covers x**:
+     
+$\neg s_j \vee \neg s_k \quad \text{for all } j \neq k \text{ in } I(x)$
