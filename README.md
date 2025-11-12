@@ -1,16 +1,10 @@
 # SAT-ExactCover
 ## Problem Definition
-A collection of subsets  
-$S = \{ S_1, \dots, S_m \}$  
-over a set  
-$X = \{ 1, \dots, n \}$
-
-**Decision question:**  
 Let $X = \{1, 2, \dots, n\}$ and $S = \{S_1, S_2, \dots, S_m\}$ be a collection of subsets of $X$.
 
 **Decision question:**  
-Is there a subcollection $S^* \subseteq S$ such that each element in $X$ appears in exactly one subset of $S^*$?  
-Equivalently, does $S^*$ form an exact cover of $X$?
+Is there a subcollection $S^* \subseteq S$ such that each element in $X$ appears in exactly one subset of \(S^*\)?  
+Equivalently, does \(S^*\) form an exact cover of $X$?
 
 **Decision output:**  
 - SAT if such a selection exists.  
