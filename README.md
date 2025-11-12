@@ -47,8 +47,9 @@ The problem is encoded using variables $s_i$ that indicate whether we select the
 
 For each element $x \in X$, define  
 
-
-$I(x) = \left\{i \mid x \in S_i\right\}$
+\[
+I(x) = \left\{ i \mid x \in S_i \right\}.
+\]
 
 We require that each element $x \in X$ is covered exactly once:
 
