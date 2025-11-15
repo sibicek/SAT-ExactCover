@@ -1,6 +1,6 @@
 # SAT-ExactCover
 ## Problem Definition
-Let $X = \{1, 2, \dots, n\}$ and $S = \{S_1, S_2, \dots, S_m\}$ be a collection of subsets of $X$.
+Let $X = ${$\{1, 2, \dots, n\}$} and $S = ${$\{S_1, S_2, \dots, S_m\}$} be a collection of subsets of $X$.
 
 **Decision question:**  
 Is there a subcollection $S^* \subseteq S$ such that each element in $X$ appears in exactly one subset of S*?  
