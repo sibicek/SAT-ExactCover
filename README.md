@@ -93,14 +93,14 @@ We measured how long the SAT solver takes depending on the number of elements n,
 
 The goal is to observe how runtime scales with the number of elements under these constraints.
 
-| # Elements (n) | | SAT time (s) |
+| # Elements (n) | SAT time (s) |
 |----------------|--------------|
-| 20             | 0.072         |
-| 50             | 0.148         |
-| 100            | 1.271         |
-| 150            | 6.134         |
-| 200            | 15.888        |
-| 250            | 43.226        |
-| 300            | 92.528        |
+| 20             | 0.072        |
+| 50             | 0.148        |
+| 100            | 1.271        |
+| 150            | 6.134        |
+| 200            | 15.888       |
+| 250            | 43.226       |
+| 300            | 92.528       |
 
 ![Graph showing SAT runtime](sat_time_vs_elements.png)
