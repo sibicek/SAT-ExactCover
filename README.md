@@ -62,3 +62,45 @@ $$\bigvee_{j \in I(x)} s_j$$
 2. **At most one subset covers x**:
      
 $$\neg s_j \vee \neg s_k \quad \text{for all } j \neq k \text{ in } I(x)$$
+
+## User documentation
+### Basic usage:
+```
+exact_cover_sat.py [-h] [-i INPUT] [-o OUTPUT] [-s SOLVER] [-v {0,1}]
+```
+### Command-line options:
+- -h, --help: Show a help message and exit
+- -i INPUT, --input INPUT: The instance file.
+- -o OUTPUT, --output OUTPUT: Output file for the DIMACS format.
+- -s SOLVER, --solver SOLVER: The SAT solver to be used.
+- -v {0,1}, --verb {0,1}: Verbosity of the SAT solver.
+
+## Example instances
+- test_sat.in
+- test_unsat.in
+- complex_instance_sat.in
+- complex_instance_unsat.in
+
+## Experiments
+Experiments were tun on Intel Core i7-12700H (2.3Hz) and 16 GB RAM on Ubuntu inside WSL2 (Windows 11).
+Time was measured with hyperfine.
+
+We measured how long the SAT solver takes depending on the number of elements n, given that:
+
+- The number of subsets is 5 × n.
+
+- Each subset has a size between n / 20 and n / 5.
+
+The goal is to observe how runtime scales with the number of elements under these constraints.
+
+| # Elements (n) | | SAT time (s) |
+|----------------|--------------|
+| 20             | 0.072         |
+| 50             | 0.148         |
+| 100            | 1.271         |
+| 150            | 6.134         |
+| 200            | 15.888        |
+| 250            | 43.226        |
+| 300            | 92.528        |
+
+![Graph showing SAT runtime](sat_time_vs_elements.png)
