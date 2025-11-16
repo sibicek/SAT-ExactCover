@@ -76,10 +76,9 @@ exact_cover_sat.py [-h] [-i INPUT] [-o OUTPUT] [-s SOLVER] [-v {0,1}]
 - -v {0,1}, --verb {0,1}: Verbosity of the SAT solver.
 
 ## Example instances
-- test_sat.in
-- test_unsat.in
-- complex_instance_sat.in
-- complex_instance_unsat.in
+- easy_instance_sat.in: An easy, solvable instance
+- easy_instance_unsat.in: An easy, unsolvable instance
+- complex_instance_sat.in  A solvable instance that takes approximately 15s to solve.
 
 ## Experiments
 Experiments were tun on Intel Core i7-12700H (2.3Hz) and 16 GB RAM on Ubuntu inside WSL2 (Windows 11).
